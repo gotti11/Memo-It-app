@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Memo It</string>
+
+    <string name="infoMessage">hi philipp!, hope you are doing well, this app consist of taking a photo of yourself, then
+    edit it so that you can be a meme, very simple but i tried to use some stuff i learned from your youtube channel as well as other
+    channels\n </string>
+
+    <string name="stepsToUseApp">
+        (1)press the + floating button down below\n(2) take a picture of yourself\n(3)put stickers on it\n(4)save it
+    </string>
+
+</resources>

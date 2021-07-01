@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/takenPhoto_ImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:src="@drawable/quote1"
+                app:layout_constraintDimensionRatio="2:0"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/guideline2"
+                app:layout_constraintEnd_toEndOf="@id/guideline1"/>
+
+            <TextView
+                android:id="@+id/nameOfPhoto_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="my 1st photo"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="12dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/DateOfPhoto_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="this photo was taken: 11/06/2021"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/nameOfPhoto_TextView"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="serif"
+                android:textColor="#2B2929"/>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline1"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.40"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline2"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
